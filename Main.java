@@ -2,11 +2,12 @@ import java.io.IOException;
 import java.util.Scanner;
 
 class WrongStudentName extends Exception { }
-
+class WrongAge extends Exception { }
+class WrongDateOfBirth extends Exception { }
 class Main {
     public static Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[]args) {
         while(true) {
             try {
                 int ex = menu();
